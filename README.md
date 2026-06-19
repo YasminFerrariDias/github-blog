@@ -1,16 +1,35 @@
-# React + Vite
+# GitHub Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de blog desenvolvida com React e TypeScript que consome a API do GitHub, exibindo issues de um repositório como publicações e permitindo busca por conteúdo.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React](https://react.dev/) — biblioteca para construção de interfaces
+- [TypeScript](https://www.typescriptlang.org/) — tipagem estática
+- [Vite](https://vitejs.dev/) — bundler e servidor de desenvolvimento
+- [GitHub API](https://docs.github.com/en/rest) — fonte de dados das publicações
+- [React Router DOM](https://reactrouter.com/) — navegação entre páginas
+- [React Markdown](https://github.com/remarkjs/react-markdown) — renderização de Markdown
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Exibição do perfil do usuário do GitHub (avatar, bio, seguidores e repositórios)
+- Listagem de issues do repositório como posts do blog
+- Busca de posts por palavra-chave
+- Página de detalhes da publicação com conteúdo em Markdown
+- Contador de resultados da busca
 
-## Expanding the ESLint configuration
+## Como Executar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+[GitHub Blog](https://github-blog-eight-lime.vercel.app/)
+
+## Sobre
+
+Projeto desenvolvido durante o curso Ignite da [Rocketseat](https://www.rocketseat.com.br/), com foco em consumo de API, React Router e renderização de Markdown.
